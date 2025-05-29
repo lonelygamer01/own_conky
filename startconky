@@ -1,0 +1,7 @@
+#!/bin/bash
+cd /sys/class/powercap/intel-rapl:0
+sudo chmod a+rw energy_uj
+# Launch left Conky instance
+conky -c ~/.config/conky/left.conf &
+# Launch right Conky instance
+conky -c ~/.config/conky/right.conf &
